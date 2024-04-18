@@ -1,9 +1,24 @@
-# GeometryTemplate
-A template project to get started with geometry-central and Polyscope. Copied from Nick's template [here](https://github.com/nmwsharp/gc-polyscope-project-template), but with code for googletest added in.
+# Flipping between triangulations
 
-This repo is set up as a template, but it seems the submodules don't get copied to the new project. Run `setup.sh` to set up the required submodules and to run cmake. Setup also sets up cmake to export compile commands for `clang-format`. To build the code, you can run
+This repository implements Mosher's algorithm for computing a sequence of edge flips to transform an input triangulation into any other triangulation specified by normal coordinates.
+
+The algorithm is described beginning at the bottom of page 37 of:
 ```
+Lee Mosher (Mar. 1988). “Tiling the projective foliation space of a punctured surface”.
+Transactions of the American Mathematical Society 306.1, pp. 1–70.
+doi: https://doi.org/10.2307/2000830.
+```
+
+
+
+## Getting started
+On mac/linux, you can set up this project with the following commands.
+```bash
+git clone --recursive https://github.com/MarkGillespie/MosherFlips.git
+cd MosherFlips
+mkdir build
 cd build
+cmake -DCMAKE_BUILD_TYPE=Release ..
 make -j7
 ```
 
