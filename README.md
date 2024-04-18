@@ -3,11 +3,11 @@
 This repository implements Mosher's algorithm for computing a sequence of edge flips to transform an input triangulation into any other triangulation specified by normal coordinates.
 
 The algorithm is described beginning at the bottom of page 37 of [the following paper](https://doi.org/10.2307/2000830):
-```
+
 Lee Mosher (Mar. 1988). “Tiling the projective foliation space of a punctured surface”.
-Transactions of the American Mathematical Society 306.1, pp. 1–70.
+_Transactions of the American Mathematical Society_ 306.1, pp. 1–70.
 doi: https://doi.org/10.2307/2000830.
-```
+
 
 
 
