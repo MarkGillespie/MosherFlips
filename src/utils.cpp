@@ -123,6 +123,7 @@ bool onFace(const SurfacePoint& p, Face f) {
     case SurfacePointType::Face:
         return checkAdjacent(p.face, f);
     }
+    return false;
 }
 
 bool isNear(const SurfacePoint& p, const SurfacePoint& q, double tol) {

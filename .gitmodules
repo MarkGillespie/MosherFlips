@@ -9,3 +9,4 @@
 [submodule "deps/googletest"]
 	path = deps/googletest
 	url = git@github.com:google/googletest
+	branch = v1.12.x
